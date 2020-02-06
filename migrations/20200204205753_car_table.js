@@ -31,9 +31,9 @@ exports.up = function(knex) {
       tbl.string("engine")
       tbl.string("transmission")
       tbl.integer('cars_id')
-        .foreign('id')
-        .references('cars_id')
-        .inTable('cars')
+        .unsigned()
+        .notNullable()
+        .references('cars.id')
     })
   )
 };
