@@ -35,6 +35,7 @@ exports.up = function(knex) {
         .references('cars_id')
         .inTable('cars')
     })
+  )
 };
 
 exports.down = function(knex) {
