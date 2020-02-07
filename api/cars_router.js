@@ -23,7 +23,7 @@ router.post('/', (req, res) => {
               .where({id: id[0]})
               .first()
               .then(car => {
-                res.status(201).json({car: car})
+                res.status(201).json(car)
               })
     })
 })
